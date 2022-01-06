@@ -10,7 +10,9 @@ class HomeController < ApplicationController
     if @data.save
     	message = "hiii"
       TwilioTextMessenger.new(message).call
+      redirect_to "/new"
     end
                      
-    end
+  end
 end
+ 
