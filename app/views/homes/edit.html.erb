@@ -1,0 +1,22 @@
+ <%= form_with model:@data,url:"update/#{@data.id}",method: :post do |form| %>
+    <div>
+      <%= form.label :first_name %><br>
+      <%= form.text_field :first_name %>
+    </div>
+
+
+
+    <div>
+    <%= form.label :last_name %><br>
+    <%= form.text_field :last_name %>
+  </div>
+    <div>
+      <%= form.label :email %><br>
+      <%= form.text_field :email %><br>
+    </div>
+  
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>  -->

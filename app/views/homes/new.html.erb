@@ -1,7 +1,7 @@
 
 
 
-<img src="assets/setting1.png" style="max-width:3%;" class="rounded float-right">
+<!-- <img src="assets/setting1.png" style="max-width:3%;" class="rounded float-right">
 <li class="nav-item">   
   <div class="dropdown">
       <a href="#" id="imageDropdown" data-toggle="dropdown">
@@ -49,3 +49,27 @@
 
   </ul>
 </div>
+ -->
+
+ <%= form_with url:"/create",method: :post do |form| %>
+    <div>
+      <%= form.label :first_name %><br>
+      <%= form.text_field :first_name %>
+    </div>
+
+
+
+    <div>
+    <%= form.label :last_name %><br>
+    <%= form.text_field :last_name %>
+  </div>
+    <div>
+      <%= form.label :email %><br>
+      <%= form.text_field :email %><br>
+    </div>
+  
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>  -->

@@ -1,0 +1,28 @@
+<table class="table">
+ <thead>
+   <tr>
+     <th scope="col">Id</th>
+     <th scope="col">Name</th>
+     <th scope="col">lastname</th>
+     <th scope="col">email</th>
+  
+     </tr>
+ </thead>
+  <tbody>
+    <%  @data.each do |data| %>
+      <tr>
+        <td><%= data.id %></td>
+        <td><%= data.first_name%></td>
+        <td><%= data.last_name%></td>
+        <td><%= data.email %></td>
+        <td>
+          <a href="/show/<%= data.id%>">show</a>
+         </td>
+
+      
+       </tr>
+    <% end %>
+
+   </tbody>
+</table>
+    

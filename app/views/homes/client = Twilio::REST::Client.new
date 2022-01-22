@@ -1,0 +1,20 @@
+ client = Twilio::REST::Client.new
+  client.messages.create({
+    from: '+14153601772',
+    to: '+919793490339',
+    body: 'Hello there! This is a test'
+  })
+
+
+      client = Twilio::REST::Client.new
+    client.messages.create({
+      from: "+14153601772",
+      to: '+919793490339',
+      body: "hiii"
+    })
+  client = Twilio::REST::Client.new
+  client.messages.create({
+    from: "+14153601772",
+    to: '+919793490339',
+    body: 'Hello there! This is a test'
+  })
