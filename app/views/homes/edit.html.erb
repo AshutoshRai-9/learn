@@ -1,4 +1,4 @@
- <%= form_with model:@data,url:"update/#{@data.id}",method: :post do |form| %>
+ <%= form_with model:@data,url:update_path(@data),method: :post do |form| %>
     <div>
       <%= form.label :first_name %><br>
       <%= form.text_field :first_name %>

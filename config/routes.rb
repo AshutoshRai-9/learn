@@ -6,7 +6,7 @@ devise_for :users
   get "/index", to: "homes#index"
    get "/show/:id", to: "homes#show"
    get "show/edit/:id", to: "homes#edit"
-  post "show/edit/update/:id", to: "homes#update"
+  post "show/edit/update/:id", to: "homes#update", as: :update
 #resources :homes
 
 end
